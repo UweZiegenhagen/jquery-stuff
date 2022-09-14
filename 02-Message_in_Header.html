@@ -9,18 +9,24 @@
     <script>
         $(document).ready(function () {
             $("#klick").click(function () {
-               // alert("jQuery is working!");
-
                $("#header").show().delay(2000).fadeOut();
-
             });
             $( "#header" ).hide();
         });
     </script>
+    <style>
+         header > div {
+    	text-align: center; 
+        }
+        header {
+            min-height: 20px;
+        }
+
+    </style>
 </head>
 <body>
-    <header >
-        <p></p><p id="header">Header der Seite</p>
+    <header>
+        <div id="header">Text copied to clipboard</divs>
     </header>
 
     <button id="klick">Klick mich!</button>
