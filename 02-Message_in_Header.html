@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Example</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#klick").click(function () {
+               // alert("jQuery is working!");
+
+               $("#header").show().delay(2000).fadeOut();
+
+            });
+            $( "#header" ).hide();
+        });
+    </script>
+</head>
+<body>
+    <header >
+        <p></p><p id="header">Header der Seite</p>
+    </header>
+
+    <button id="klick">Klick mich!</button>
+
+
+    <footer id="footer">
+        Footer der Seite
+    </footer>
+</body>
+
+
+</html>
