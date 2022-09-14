@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Example</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/css/dragtable.mod.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/css/filter.formatter.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/css/highlights.min.css"></script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("#klick").click(function () {
+                alert("jQuery is working!");
+            });
+        });
+
+        $(function() {
+          $("#tab").tablesorter(); 
+        });
+</script>
+</head>
+<body>
+
+<table id="tab" class="tablesorter">
+<thead>
+    <tr>
+        <th>Animal</th>
+        <th>Legcount</th>
+        <th>Color</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Dog</td>
+        <td>4</td>
+        <td>brown</td>
+    </tr>
+    <tr>
+        <td>Fox</td>
+        <td>4</td>
+        <td>red</td>
+    </tr>
+    <tr>
+        <td>Swan</td>
+        <td>2</td>
+        <td>white</td>
+    </tr>
+    <tr>
+        <td>Snake</td>
+        <td>0</td>
+        <td>black</td>
+    </tr>
+    <tr>
+        <td>tiger</td>
+        <td>4</td>
+        <td>white</td>
+    </tr>
+
+
+</tbody>
+
+
+</table>
+
+
+</body>
+
+
+</html>
