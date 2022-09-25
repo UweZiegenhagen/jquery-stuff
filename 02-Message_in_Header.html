@@ -9,12 +9,14 @@
     <script>
         $(document).ready(function () {
             $("#klick").click(function () {
-               $("#header").show().delay(2000).fadeOut();
+							$('#header').css({'background-color': 'coral'});
+              $("#header").show().delay(2000).fadeOut();
             });
             $( "#header" ).hide();
         });
     </script>
     <style>
+         html, body { height: 100%;}
          header > div {
     	text-align: center; 
         }
